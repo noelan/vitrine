@@ -1,0 +1,12 @@
+.gradient {
+  position: absolute;
+  bottom: 0;
+
+  height: 200px;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(32, 32, 32));
+
+  @include xs-d {
+    height: 50px;
+  }
+}

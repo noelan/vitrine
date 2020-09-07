@@ -1,0 +1,22 @@
+/** Utils **/
+@import "./scss/breakpoints.scss";
+@import "./scss/colors.scss";
+@import "./scss/fonts.scss";
+@import "./scss/global.scss";
+@import "./scss/utils.scss";
+
+/** Components **/
+@import "./scss/components/Header.styles.scss";
+@import "./scss/components/Navbar.styles.scss";
+@import "./scss/components/Logo.styles.scss";
+@import "./scss/components/Header-title.styles.scss";
+@import "./scss/components/Section-one.styles.scss";
+@import "./scss/components/Section-parallax.styles.scss";
+@import "./scss/components/Section-mosaique.styles.scss";
+@import "./scss/components/Footer.styles.scss";
+@import "./scss/components/Gradient.styles.scss";
+
+/** Animations **/
+@import "./scss/animations/Fade-in.styles.scss";
+@import "./scss/animations/Loader.styles.scss";
+@import "./scss/animations/Fade-out.styles.scss";

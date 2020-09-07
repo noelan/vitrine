@@ -1,0 +1,77 @@
+.footer-wrapper {
+  width: 100vw;
+  height: 150px;
+  background: $black-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  /** Partie Gauche Logo + réseau + concept **/
+  .column-left {
+    height: 120px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    @include Lato;
+
+    @include m-d {
+      width: 70%;
+    }
+
+    @include xs-d {
+      justify-content: space-between;
+      width: 90%;
+      text-align: center;
+    }
+
+    .column-one {
+      width: 33%;
+
+      .logo-footer {
+        @include Roboto;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+
+        .title {
+          letter-spacing: 10px;
+        }
+      }
+    }
+    .column-two {
+      width: 33%;
+      p {
+        text-align: left;
+        color: white;
+
+        @include xs-d {
+          text-align: center;
+        }
+      }
+    }
+    .column-three {
+      width: 33%;
+      color: $grey-light;
+      @include fw2;
+    }
+  }
+
+  /** Partie droite **/
+  .column-right {
+    height: 120px;
+    width: 15%;
+    text-align: left;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+
+    @include m-d {
+      display: none;
+    }
+
+    p {
+      color: white;
+      @include Lato;
+    }
+  }
+}

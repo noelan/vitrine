@@ -1,0 +1,116 @@
+.mosaique-wrapper {
+  @include m-d {
+    height: auto;
+  }
+
+  /** Définir la taille de chaque row puis col et pour finis pour chaque celulle **/
+  /** Row One **/
+  .row-one {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    border-top: solid white;
+    border-bottom: solid white;
+
+    @include m-d {
+      display: none;
+    }
+  }
+
+  .col-big {
+    position: relative;
+    width: 60%;
+  }
+
+  .col-small {
+    width: 40%;
+    .small-image-top {
+      width: 100%;
+      height: 50%;
+      border-bottom: solid white;
+      border-left: solid white;
+    }
+    .small-image-bottom {
+      width: 100%;
+      height: 50%;
+      border-left: solid white;
+    }
+  }
+
+  /** Row Two **/
+
+  .row-two {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    @include m-d {
+      display: none;
+    }
+
+    .col-medium-left {
+      height: 100%;
+      width: 50%;
+      border-bottom: solid white;
+    }
+
+    .col-medium-right {
+      height: 100%;
+      width: 50%;
+      border-bottom: solid white;
+      border-left: solid white;
+    }
+  }
+}
+.mosaique-wrapper > div * {
+  overflow: hidden;
+  position: relative;
+
+  @include m-d {
+    overflow: visible;
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(30%);
+    transition: ease 1.5s;
+
+    &:hover {
+      filter: none;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    @include Crimson;
+    color: white;
+
+    @include text-shadow;
+
+    &:hover {
+      filter: none;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.mosaique-responsive {
+  @include m-u {
+    display: none;
+  }
+  :nth-child(1) {
+    border-top: solid white;
+  }
+  div {
+    height: 33vh;
+    border-bottom: solid white;
+  }
+}

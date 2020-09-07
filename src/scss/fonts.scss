@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&family=B612+Mono:ital@1&family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+
+@mixin Alegreya {
+  font-family: "Alegreya Sans", sans-serif;
+}
+@mixin Roboto {
+  font-family: "Roboto", sans-serif;
+}
+@mixin B612 {
+  font-family: "B612 Mono", monospace;
+}
+@mixin Lato {
+  font-family: "Lato", sans-serif;
+}
+@mixin Crimson {
+  font-family: "Crimson Text", serif;
+}
+
+@mixin fw4 {
+  font-weight: 400;
+}
+@mixin fw2 {
+  font-weight: 200;
+}
+
+@mixin text-shadow {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.border {
+  border: solid white;
+}
+
+.standard-text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}

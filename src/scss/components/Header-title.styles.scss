@@ -1,0 +1,87 @@
+.title-wrapper {
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+  z-index: 10;
+
+  @include s-d {
+    @include landscape {
+      bottom: 20%;
+    }
+  }
+
+  @include xs-d {
+    width: 70%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title {
+    @include Roboto;
+    letter-spacing: 8px;
+    font-size: 8rem;
+    color: white;
+    @include text-shadow;
+    @include xs-d {
+      font-size: 5rem;
+    }
+  }
+
+  p {
+    color: $grey-light;
+    text-align: end;
+    font-size: 2rem;
+    @include Roboto;
+
+    @include xs-d {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

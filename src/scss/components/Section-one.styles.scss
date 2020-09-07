@@ -1,0 +1,97 @@
+.section-one-wrapper {
+  background-color: $black-light;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include m-d {
+    height: 60%;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+
+    @include portrait {
+      height: 40%;
+    }
+  }
+
+  @include s-d {
+    height: 100%;
+  }
+
+  @include xs-d {
+    height: 70%;
+  }
+
+  /** Partie Gauche **/
+  .text-section {
+    width: 20%;
+    height: 40%;
+
+    @include m-d {
+      width: 100%;
+      padding-top: 100px;
+    }
+
+    @include xs-d {
+      padding-top: 0px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+      @include fw4;
+      padding: 10px 0px;
+    }
+    .upper-text {
+      color: $grey-lighter;
+      @include fw4;
+    }
+    .sub-text {
+      color: white;
+      @include Roboto;
+      line-height: 1.6;
+      text-align: justify;
+      font-size: 1rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  /** Partie Droite **/
+  .image-section {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    display: flex;
+
+    @include m-d {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .wrapper-img-one {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      height: 100%;
+      width: 60%;
+      z-index: 1;
+    }
+
+    .wrapper-img-two {
+      position: absolute;
+      top: 28%;
+      height: 40%;
+      width: 30%;
+      right: 45%;
+      z-index: 2;
+    }
+  }
+}

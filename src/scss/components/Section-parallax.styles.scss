@@ -1,0 +1,38 @@
+.section-parallax {
+  .card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+
+    background-color: black;
+    height: 500px;
+    width: 300px;
+    color: white;
+    padding: 0px 40px;
+
+    @include m-d {
+      @include center;
+    }
+
+    .upper-text {
+      @include fw4;
+      font-size: 1.5rem;
+      color: $grey-lighter;
+      padding: 20px 0px;
+      @include Lato;
+    }
+
+    .title {
+      font-size: 2rem;
+      padding: 20px 0px;
+      @include fw4;
+    }
+
+    .sub-text {
+      color: white;
+      @include Lato;
+      line-height: 1.6;
+    }
+  }
+}
